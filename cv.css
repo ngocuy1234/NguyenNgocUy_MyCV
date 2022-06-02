@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(45deg,
+            rgb(158, 32, 43) 0%,
+            rgb(200, 80, 192) 50%,
+            rgb(230, 191, 18) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-size: 400% 400%;
+    /* position: relative; */
+    animation: Gradient 8s ease infinite;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.mt-2 {
+    margin-top: 22px;
+}
+
+.margin-text {
+    margin: 11px 0px;
+}
+
+.fs-text {
+    font-style: italic;
+    color: #0b1924;
+}
+
+.fw-bolder {
+    font-weight: 500;
+    color: #0b1924;
+}
+
+.title-sub {
+    text-transform: uppercase;
+}
+
+.title-right i {
+    min-width: 30px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #225372;
+    color: #ffff;
+    border-radius: 50px;
+}
+
+/* COMOMOM */
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffff;
+    height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+
+.my-info-left-box {
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #225372;
+    padding: 10px 30px;
+    color: rgb(226, 224, 224);
+    font-weight: 500;
+}
+
+.my-info-basic {
+    text-align: center;
+
+    border-bottom: 1px solid #ffff;
+    padding-bottom: 20px;
+}
+
+.my-info-avatar {
+    width: 130px;
+    margin: 10px auto 10px auto;
+}
+
+.my-info-avatar-img {
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid #1d669e;
+}
+
+.my-info-basic-name {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.my-info-basic-nominee {
+    font-size: 14px;
+    margin-top: 3px;
+    font-style: italic;
+}
+
+/*  */
+.my-info-detail {
+    list-style-type: none;
+
+    border-bottom: 1px solid #ffff;
+}
+
+.my-info-detail-item {
+    margin: 15px 0px;
+    font-size: 14px;
+}
+
+.my-info-detail-item i {
+    min-width: 30px;
+    font-size: 16px;
+}
+
+/*  */
+
+.my-info-education {
+    padding-top: 10px;
+}
+
+.my-info-education .title {
+    font-size: 17px;
+}
+
+.my-info-education .my-info-education-content {
+    font-size: 15px;
+    margin: 12px 0px;
+}
+
+/*  Phần bên phải */
+
+.my-info-right-box {
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.my-info-left-detail-box {
+    border-right: 1px solid rgb(153, 152, 152);
+}
+
+.text-content {
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.audio-box {
+    position: absolute;
+    left: -100px;
+    transform: rotate(90deg);
+}
+
+.list-social {
+    position: absolute;
+    right: 20px;
+    list-style-type: none;
+}
+
+.social-item {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+
+.social-item a {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-item i {
+    font-size: 19px;
+    color: #ffff;
+}
+
+.social-item:hover {
+    box-shadow: 0px 0px 10px #ffff;
+    transform: translateX(-10px);
+    transition: all ease-in-out 0.3s;
+}
+
+.social-item img {
+    width: 40px;
+}
+
+.bg-facebook {
+    background-color: #043b66;
+}
+
+.bg-youtobe {
+    background-color: #fc1616;
+}
+
+.bg-githurt {
+    background-color: #000;
+}
+
+.bg-fptpoly {
+    background-color: #ff5628;
+}
