@@ -16,8 +16,9 @@ body {
     height: 100vh;
     width: 100vw;
     background-size: 400% 400%;
-    /* position: relative; */
+    position: relative;
     animation: Gradient 7s ease infinite;
+    overflow-x: hidden;
 }
 
 @keyframes Gradient {
@@ -96,7 +97,6 @@ body {
 
 .my-info-basic {
     text-align: center;
-
     border-bottom: 1px solid #ffff;
     padding-bottom: 20px;
 }
@@ -234,4 +234,52 @@ body {
 
 .bg-fptpoly {
     background-color: #ff5628;
+}
+
+@media (max-width:568px) {
+    .container {
+        margin: auto;
+
+    }
+
+    .container,
+    .my-info-right-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        background-image: #fff;
+    }
+
+    .my-info-left-detail-box {
+        border-right: none;
+    }
+
+    .list-social {
+        position: fixed;
+        bottom: 0;
+        list-style-type: none;
+        display: flex;
+    }
+
+    .audio-box {
+        display: none;
+    }
+
+    .social-item:hover {
+        box-shadow: 0px 0px 10px #ffff;
+        transform: translateY(-10px);
+        transition: all ease-in-out 0.3s;
+    }
+
+    .social-item {
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        margin-right: 20px;
+        transition: all ease-in-out 0.3s;
+        border: 2px solid #fff;
+    }
 }
