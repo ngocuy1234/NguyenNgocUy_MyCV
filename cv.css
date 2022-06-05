@@ -264,7 +264,9 @@ body {
     }
 
     .audio-box {
-        display: none;
+        position: fixed;
+        bottom: 0;
+        transform: translateX(-100%);
     }
 
     .social-item:hover {
