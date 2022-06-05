@@ -17,7 +17,7 @@ body {
     width: 100vw;
     background-size: 400% 400%;
     /* position: relative; */
-    animation: Gradient 8s ease infinite;
+    animation: Gradient 7s ease infinite;
 }
 
 @keyframes Gradient {
@@ -77,7 +77,6 @@ body {
     width: 1000px;
     margin: 0 auto;
     background-color: #ffff;
-    height: 90vh;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: grid;
