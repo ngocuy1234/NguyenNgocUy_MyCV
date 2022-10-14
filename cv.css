@@ -75,7 +75,7 @@ body {
 /* COMOMOM */
 
 .container {
-    width: 1000px;
+    width: 1050px;
     margin: 0 auto;
     background-color: #ffff;
     border-radius: 10px;
@@ -166,6 +166,7 @@ body {
 
 .my-info-left-detail-box {
     border-right: 1px solid rgb(153, 152, 152);
+    padding-right: 10px;
 }
 
 .text-content {
